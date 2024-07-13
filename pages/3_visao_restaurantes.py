@@ -188,7 +188,7 @@ def time_by_city_traffic_density( df ):
 #=============================================
 # Importando a base
 #=============================================
-df = pd.read_csv("C:/Users/Fernando/OneDrive/TRAB/repos/data_sets/comunidade_ds/train.csv")
+df = pd.read_csv("data_sets/comunidade_ds/train.csv")
 
 #Create Backup
 df_backup = df.copy()
