@@ -202,7 +202,7 @@ df_filtered = df.copy()
 # Barra Lateral
 #=============================================
 #colocando o título na página
-st.header('Marketplace - Visão Entregadores')
+st.header('Marketplace - Visão Restaurantes')
 
 #Inserindo uma imagem na sidebar
 image_path = 'target.png'
