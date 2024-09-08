@@ -280,11 +280,12 @@ with tab1:
         col1,col2 = st.columns(2, gap='large')
         
         with col1:
-
+            col1.markdown('##### Tempo média e Desv. Padrão de entrega por Cidade')
             fig = times_by_city( df )
             col1.plotly_chart(fig, use_container_width=True)
 
         with col2:
+            col2.markdown('##### Detalhes de tempo de Entrega')
             df_aux = data_times_by_city_typeOrder( df )
             col2.dataframe(df_aux)
 
@@ -294,10 +295,13 @@ with tab1:
         col1,col2 = st.columns(2)
 
         with col1:
+            col1.markdown('##### Distancia média de Entregas por Cidade')
             fig = distance_by_city( df )
             col1.plotly_chart(fig, use_container_width= True)
 
         with col2:
+            col2.markdown('##### Tempo média por densidade de tráfego')
+
             fig = time_by_city_traffic_density( df )
             
             col2.plotly_chart(fig, use_container_width=True)
