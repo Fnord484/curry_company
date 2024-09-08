@@ -178,12 +178,12 @@ with tab1:
             with col1:
                 #Caixa com valor da maior idade
                 maior_idade = df['Delivery_person_Age'].max()
-                col1.metric('Maior Idade',maior_idade)
+                col1.metric('Idade mais Velho',maior_idade)
 
             with col2:
                 #Caixa com valor da menor idade
                 menor_idade = df['Delivery_person_Age'].min()
-                col2.metric('Menor Idade',menor_idade)
+                col2.metric('Idade mais Novo',menor_idade)
 
             with col3:
                 #Caixa com valor da melhor condição de veículo
