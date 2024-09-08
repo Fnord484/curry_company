@@ -225,7 +225,7 @@ with tab2:
             st.plotly_chart(fig, use_container_width=True)
         
         with st.container():
-            st.markdown('# Pedidos por Entregadores Únicos')
+            st.markdown('# Pedidos feitos por Entregadores Únicos na Semana')
             fig = order_by_delivers( df )
             st.plotly_chart(fig, use_container_width=True)
               
